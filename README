@@ -4,6 +4,7 @@ trytond_party_pa
 Tryton party module for Panama:
 
 - Adds type of party field. (Ex: Natural, Empresa, Fundacion)
+- Adds dob (date of birth) field
 - Adds type party identifiers: RUC, C.I., Pasaporte
 
 

@@ -5,5 +5,7 @@ this repository contains the full copyright notices and license terms. -->
     <xpath expr="/form/group[@id='checkboxes']" position="after">
         <label name="party_type"/>
         <field name="party_type"/>
+        <label name="dob"/>
+        <field name="dob"/>
     </xpath>
 </data>

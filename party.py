@@ -18,6 +18,7 @@ class Party:
             ('f', 'Fundacion'),
             ('p', 'Publica'),
             ], 'Type')
+    dob = fields.Date('Date of Birth')
 
 
 class PartyIdentifier:
