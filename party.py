@@ -3,6 +3,7 @@
 
 from trytond.pool import PoolMeta
 from trytond.model import fields
+from trytond.pyson import Eval, Not, In
 
 __all__ = ['Party', 'PartyIdentifier']
 
@@ -13,12 +14,21 @@ class Party:
 
     party_type = fields.Selection([
             (None, ''),
-            ('n', 'Natural'),
-            ('e', 'Empresa'),
-            ('f', 'Fundacion'),
-            ('p', 'Publica'),
-            ], 'Type')
+            ('natural', 'Natural'),
+            ('privada', 'Empresa Privada'),
+            ('fundacion', 'Fundacion'),
+            ('publica', 'Empresa Publica'),
+            ('gobierno', 'Gobierno'),
+        ], 'Type')
     dob = fields.Date('Date of Birth')
+    gender = fields.Selection([
+            (None, ''),
+            ('male', 'Masculino'),
+            ('female', 'Femanino'),
+        ], 'Gender',
+        states={
+            'invisible': Not(In(Eval('party_type'), ['natural',])),
+        }, depends=['party_type'])
 
 
 class PartyIdentifier:
