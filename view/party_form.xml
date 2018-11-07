@@ -7,5 +7,7 @@ this repository contains the full copyright notices and license terms. -->
         <field name="party_type"/>
         <label name="dob"/>
         <field name="dob"/>
+        <label name="gender"/>
+        <field name="gender"/>
     </xpath>
 </data>
