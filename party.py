@@ -24,7 +24,7 @@ class Party:
     gender = fields.Selection([
             (None, ''),
             ('male', 'Masculino'),
-            ('female', 'Femanino'),
+            ('female', 'Femenino'),
         ], 'Gender',
         states={
             'invisible': Not(In(Eval('party_type'), ['natural',])),
