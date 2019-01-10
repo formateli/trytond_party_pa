@@ -9,5 +9,8 @@ this repository contains the full copyright notices and license terms. -->
         <field name="dob"/>
         <label name="gender"/>
         <field name="gender"/>
+        <label name="estado_civil"/>
+        <field name="estado_civil"/>
+        <newline/>
     </xpath>
 </data>

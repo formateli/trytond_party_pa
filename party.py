@@ -29,6 +29,16 @@ class Party:
         states={
             'invisible': Not(In(Eval('party_type'), ['natural',])),
         }, depends=['party_type'])
+    estado_civil = fields.Selection([
+            (None, ''),
+            ('casado', 'Casado'),
+            ('soltero', 'Soltero'),
+            ('divorciado', 'Divorciado'),
+            ('Viudo', 'Viudo'),
+        ], 'Estado Civil',
+        states={
+            'invisible': Not(In(Eval('party_type'), ['natural',])),
+        }, depends=['party_type'])
 
 
 class PartyIdentifier:
