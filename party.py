@@ -8,8 +8,7 @@ from trytond.pyson import Eval, Not, In
 __all__ = ['Party', 'PartyIdentifier']
 
 
-class Party:
-    __metaclass__ = PoolMeta
+class Party(metaclass=PoolMeta):
     __name__ = 'party.party'
 
     party_type = fields.Selection([
@@ -41,8 +40,7 @@ class Party:
         }, depends=['party_type'])
 
 
-class PartyIdentifier:
-    __metaclass__ = PoolMeta
+class PartyIdentifier(metaclass=PoolMeta):
     __name__ = 'party.identifier'
 
     @classmethod
