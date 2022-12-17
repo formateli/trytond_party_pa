@@ -1,0 +1,8 @@
+#
+msgctxt "selection:party.configuration,identifier_types:"
+msgid "Panamenian Tax Identifier - RUC"
+msgstr "Registro Unico de Contribuyente Panameño - RUC"
+
+msgctxt "selection:party.configuration,identifier_types:"
+msgid "Panamenian Personal ID Identifier - CI"
+msgstr "Cédula de Identidad Panameña - CI"
